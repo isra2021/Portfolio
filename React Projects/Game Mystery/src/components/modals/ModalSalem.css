@@ -1,0 +1,108 @@
+.modal-salem-container {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.is-open-salem {
+    display: flex;
+}
+
+.modal-salem {
+    display: flex;
+    width: 60%;
+    height: 55%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(85, 33, 33);
+    background-color: transparent;
+   
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    position: relative;
+}
+
+.modal-close-salem {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    transition: .3s ease all;
+    color: 0;
+    cursor: pointer;
+    background-color: white;
+}
+
+.modal-close-salem:hover {
+    background: rgba(134, 4, 4, 0.15);
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.modal-salem::-webkit-scrollbar {
+    display: none;
+}
+
+.salem-cards-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.card-select {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.salem-monster {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.salem-victim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.salem-room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.salem-cards-container img {
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+.salem-cards-container img:hover {
+    transform: scale(1.1,1.1);
+}
